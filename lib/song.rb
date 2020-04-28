@@ -32,5 +32,6 @@ class Song
   def self.artist_count
     #return a hash with key/value pairs of genre:count    
     @@artists.
+  end
 end
 
