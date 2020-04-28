@@ -23,12 +23,11 @@ class Song
   end
   
   def self.artists
-    @@artists.include?(@artist) do
-      if FALSE
+    if @@artists.include?(@artist) == FALSE
         @@artists << @artist
-      else
-        break
-      end
+    else
+      break
+    end
     end
     @@artists
     binding.pry
