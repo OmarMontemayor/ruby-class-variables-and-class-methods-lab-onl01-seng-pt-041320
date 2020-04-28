@@ -23,8 +23,11 @@ class Song
   end
   
   def self.artists
-    @@artists
-    #filter out duplicates    
+    if @@artists.find != @artist
+      @@artists << @artist
+    else
+      @@artists
+    end
   end
   
   def self.genre_count
