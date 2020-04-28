@@ -23,7 +23,8 @@ class Song
   end
   
   def self.artists
-    
+    @@artists.include?(@artist) do
+      
   end
   
   def self.genre_count
