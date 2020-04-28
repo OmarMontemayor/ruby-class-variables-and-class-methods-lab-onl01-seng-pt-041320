@@ -23,5 +23,14 @@ class Song
     @@artists
     #filter out duplicates    
   end
+  
+  def self.genre_count
+    #return a hash with key/value pairs of genre:count
+    @@genres.each
+  end
+  
+  def self.artist_count
+    #return a hash with key/value pairs of genre:count    
+    @@artists.
 end
 
