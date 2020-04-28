@@ -27,6 +27,7 @@ class Song
       if FALSE
         @@artists << @artist
       end
+    end
     @@artists
     binding.pry
   end
