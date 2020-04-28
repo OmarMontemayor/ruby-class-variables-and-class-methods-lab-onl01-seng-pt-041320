@@ -18,23 +18,30 @@ class Song
   end
   
   def self.genres
-    @@genres
+    @@genres.uniq
     #filter out duplicates
   end
   
   def self.artists
-    
-    @@artists
+    @@artists.uniq
   end
   
   def self.genre_count
     #return a hash with key/value pairs of genre:count
-    @@genres
+    genre_count = {}
+    @@genres.each do |genre|
+      if genre_count[genre]
+        genre_count[genre] += 1
+      else
+        genre_count[genre] = 1
+      end
+    end
+    genre_count
   end
   
   def self.artist_count
     #return a hash with key/value pairs of genre:count    
-    @@artists
+    @@artists.inject(Hash.new(0)) { |total, i| total[i] += 1 ;total}
   end
 end
 
