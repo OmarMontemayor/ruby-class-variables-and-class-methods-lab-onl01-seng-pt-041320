@@ -24,11 +24,11 @@ class Song
   
   def self.artists
     @@artists.include?(@artist)
-    binding.pry
     if FALSE
       @@artists << @artist
     end
     @@artists
+    binding.pry
   end
   
   def self.genre_count
