@@ -28,7 +28,6 @@ class Song
     else
       break
     end
-    end
     @@artists
     binding.pry
   end
