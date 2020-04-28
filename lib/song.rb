@@ -23,7 +23,7 @@ class Song
   end
   
   def self.artists
-    if @@artists.find != @artist
+    @@artists.find != @artist
       @@artists << @artist
     else
       @@artists
