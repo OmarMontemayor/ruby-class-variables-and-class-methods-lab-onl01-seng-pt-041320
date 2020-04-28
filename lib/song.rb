@@ -8,6 +8,7 @@ class Song
     @name = name
     @@count += 1
     @@genres << genre
+    @@artists << artist
   end
   
   def self.count
@@ -16,5 +17,11 @@ class Song
   
   def self.genres
     @@genres
+    #filter out duplicates
+  end
+  def self.artists
+    @@artists
+    #filter out duplicates    
   end
 end
+
