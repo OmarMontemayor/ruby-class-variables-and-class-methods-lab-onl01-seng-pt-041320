@@ -26,6 +26,8 @@ class Song
     @@artists.include?(@artist) do
       if FALSE
         @@artists << @artist
+      else
+        break
       end
     end
     @@artists
