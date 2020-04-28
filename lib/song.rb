@@ -23,13 +23,7 @@ class Song
   end
   
   def self.artists
-    @@artists.find(@artist) do |x|
-      if x == @artist
-      @@artists << @artist
-    else
-      @@artists
-    end
-    @@artists
+    
   end
   
   def self.genre_count
